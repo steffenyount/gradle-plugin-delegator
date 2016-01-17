@@ -1,0 +1,1 @@
+{"name":"gradle-plugin-delegator","tagline":"A delegator plugin for the new Gradle plugin DSL","body":"This plugin delegates its apply() calls to a configurable list of available project plugins.","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
