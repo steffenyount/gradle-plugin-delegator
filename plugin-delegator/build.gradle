@@ -3,7 +3,7 @@ plugins {
   id 'com.gradle.plugin-publish' version '0.9.3'
 }
 
-version = '2'
+version = '3'
 
 pluginBundle {
   website = 'http://steffen.yount.name/gradle-plugin-delegator/'
