@@ -64,11 +64,10 @@ public class PluginDelegatorPlugin implements Plugin<Project> {
 
     private List<String> loadDelegatePluginIds() {
         final List<String> result = new ArrayList<>();
-        final ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         final Enumeration<URL> en;
 
         try {
-            en = classLoader.getResources(PROPERTIES_FILE_NAME);
+            en = getClass().getClassLoader().getResources(PROPERTIES_FILE_NAME);
 
         } catch (IOException ex) {
             throw new GradleException(
