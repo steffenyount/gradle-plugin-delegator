@@ -1,0 +1,4 @@
+rootProject.name = 'name.yount.steffen.gradle.plugins'
+
+include 'plugin-delegator'
+

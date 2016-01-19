@@ -1,0 +1,21 @@
+plugins {
+  id 'java-gradle-plugin'
+  id 'com.gradle.plugin-publish' version '0.9.3'
+}
+
+pluginBundle {
+  website = 'http://steffen.yount.name/gradle-plugin-delegator/'
+  vcsUrl = 'https://github.com/steffenyount/gradle-plugin-delegator'
+
+  plugins {
+    pluginDelegatorPlugin {
+      id = 'name.yount.steffen.plugin-delegator'
+      version = '1'
+
+      displayName = 'Plugin Delegator'
+      description = 'A delegator plugin for the new Gradle plugin DSL'
+      tags = ['delegator', 'delegate', 'testing']
+    }
+  }
+}
+
