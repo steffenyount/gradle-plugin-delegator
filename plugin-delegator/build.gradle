@@ -3,6 +3,8 @@ plugins {
   id 'com.gradle.plugin-publish' version '0.9.3'
 }
 
+version = '1'
+
 pluginBundle {
   website = 'http://steffen.yount.name/gradle-plugin-delegator/'
   vcsUrl = 'https://github.com/steffenyount/gradle-plugin-delegator'
@@ -10,7 +12,6 @@ pluginBundle {
   plugins {
     pluginDelegatorPlugin {
       id = 'name.yount.steffen.plugin-delegator'
-      version = '1'
 
       displayName = 'Plugin Delegator'
       description = 'A delegator plugin for the new Gradle plugin DSL'
